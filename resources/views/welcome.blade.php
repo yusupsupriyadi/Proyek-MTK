@@ -38,7 +38,13 @@
   </div>
 </nav>
 
-    <h1>Home</h1>
+    <div class="container">
+        cara upload <br>
+        1. git pull <br>
+        2. git add . <br>
+        3. git commit -m "update(nama_tugas)" <br>
+        4. git push -u origin main
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
