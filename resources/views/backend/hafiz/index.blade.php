@@ -40,7 +40,7 @@
 </nav>
 
     <div class="container py-5">
-    <h1>GARIS SINGGUNG LINGKARAN</h1>
+    <h1>(tugas)</h1>
     <form>
   <div class="mb-3">
     <label class="form-label">Input nilai 1</label>
