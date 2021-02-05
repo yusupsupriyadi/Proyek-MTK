@@ -43,7 +43,7 @@
         1. git pull <br>
         2. git add . <br>
         3. git commit -m "update(nama_tugas)" <br>
-        4. git push -u origin main
+        4. git push -u origin master
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
