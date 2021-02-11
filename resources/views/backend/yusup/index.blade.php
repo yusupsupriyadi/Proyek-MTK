@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Yusup</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -44,8 +44,7 @@
 <form action="/yusup_proses" method="POST">
     @csrf
 
-<h1>Menentukan Garis singgung lingkaran yang melalui titik P(x1, y1) pada lingkaran x2 + y2 = r2</h1>
-<h5 class="pt-5">Input Titik Pusat dan Jaring-Jaring Lingkaran</h5>
+<h1>Garis Singgung Lingkaran</h1>
   <div class="form-row">
     <div class="form-group col-md-2">
       <input type="text" class="form-control" aria-describedby="emailHelp" name="x1" placeholder="x1" Required>
@@ -60,13 +59,13 @@
   </div>
   <div class="form-row">
     <div class="form-group col-md-2">
-      <input type="text" class="form-control" id="inputCity"  placeholder="x2" readonly>
+      <input type="text" class="form-control" id="inputCity" name="x2" placeholder="x2">
     </div>
     <div class="form-group col-md-0">
       <h4> + </h4>
     </div>
     <div class="form-group col-md-2">
-      <input type="text" class="form-control" id="inputCity" placeholder="y2" readonly>
+      <input type="text" class="form-control" id="inputCity" name="y2" placeholder="y2">
     </div>
     <div class="form-group col-md-0">
       <h4> = </h4>
@@ -80,18 +79,31 @@
     </div>
   </div>
   <button type="submit" class="btn btn-primary">Proses</button>
-  <a href="https://brainly.co.id/tugas/33593977" class="btn btn-dark text-white">Contoh Soal Brainly</a>
 </form>
 
 <div class="pt-3">
   <div class="md-3">
-
   </div>
   <div class="md-3">
     @if(session('info'))
-      
       <div class="alert alert-info">
         {{ session('info')}}
+      </div>
+    @endif
+  </div>
+  <div class="md-3">
+    @if(session('info2'))
+      
+      <div class="alert alert-info">
+        {{ session('info2')}}
+      </div>
+    @endif
+  </div>
+  <div class="md-3">
+    @if(session('info3'))
+      
+      <div class="alert alert-info">
+        {{ session('info3')}}
       </div>
     @endif
   </div>
