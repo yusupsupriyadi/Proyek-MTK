@@ -18,11 +18,12 @@ class HafizController extends Controller
 
         // menentukan persamaan lingkaran dengan pusat 
         $hasil = " ($a * $a) + ($b * $b) = 0 ";
-        $hasila = " pow($x * $a) + pow($y * $b) "
+        $hasila = pow($a, 2);
+        $hasilb = pow($b, 2);
+        $total = $hasila * $hasilb;
 
 
-
-        return redirect('/bintang')->with('info', 'Hasil nya adalah :' .$hasil)->with('info2', 'Hasil nya adalah :' .$total_seluruh);
+        return redirect('/hafiz')->with('info', 'Hasil nya adalah :' .$total);
 
     }
 }

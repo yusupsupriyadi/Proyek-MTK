@@ -43,7 +43,7 @@
 
   <!-- ---------------------------------------- -->
   <div class="container py-5">
-    <form action="/bintang_proses" method="POST">
+    <form action="/hafiz_proses" method="POST">
       @csrf
 
       <h1>Garis Singgung Lingkaran</h1>
@@ -84,13 +84,6 @@
         @if(session('info'))
         <div class="alert alert-info">
           {{ session('info')}}
-        </div>
-        @endif
-      </div>
-      <div class="md-3">
-        @if(session('info2'))
-        <div class="alert alert-info">
-          {{ session('info2')}}
         </div>
         @endif
       </div>

@@ -30,6 +30,7 @@ class BintangController extends Controller
 
 
         return redirect('/bintang')->with('info', 'Hasil nya adalah :' .$hasil)->with('info2', 'Hasil nya adalah :' .$total_seluruh);
+        
 
     }
 }
