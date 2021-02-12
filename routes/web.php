@@ -21,3 +21,4 @@ Route::get('/yusup', 'YusupController@index');
 Route::post('/yusup_proses', 'YusupController@Proses');
 Route::get('/hafiz', 'HafizController@index');
 Route::get('/bintang', 'BintangController@index');
+Route::post('/bintang_proses', 'BintangController@Proses');
