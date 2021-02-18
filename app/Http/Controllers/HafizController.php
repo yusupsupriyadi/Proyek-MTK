@@ -23,7 +23,7 @@ class HafizController extends Controller
         $total = $hasila * $hasilb;
 
 
-        return redirect('/hafiz')->with('info', 'Hasil nya adalah :' .$total);
+        return redirect('/hafiz')->with('info', 'Hasil adalah :' .$total);
 
     }
 }

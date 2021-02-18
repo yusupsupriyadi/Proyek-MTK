@@ -107,6 +107,14 @@
       </div>
     @endif
   </div>
+  <div class="md-3">
+    @if(session('info4'))
+      
+      <div class="alert alert-info">
+        {{ session('info4')}}
+      </div>
+    @endif
+  </div>
 </div>
     </div>
     

@@ -29,7 +29,7 @@ class BintangController extends Controller
         $total_seluruh = "x2 + y2 $hasila + $hasilb + $total = 0";
 
 
-        return redirect('/bintang')->with('info', 'Hasil nya adalah :' .$hasil)->with('info2', 'Hasil nya adalah :' .$total_seluruh);
+        return redirect('/bintang')->with('info', 'Hasil  O (0,0) adalah :' .$hasil)->with('info2', 'Hasil menentukan titik pusat dan jari-jari adalah :' .$total_seluruh);
         
 
     }
