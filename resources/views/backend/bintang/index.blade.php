@@ -46,7 +46,7 @@
     <form action="/bintang_proses" method="POST">
       @csrf
 
-      <h1>Garis Singgung Lingkaran</h1>
+      <h1>Persaan Lingkaran dititk(0,0)</h1>
       <div class="form-row">
       </div>
       <div class="form-group">

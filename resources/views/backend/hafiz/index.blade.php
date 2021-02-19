@@ -46,7 +46,7 @@
     <form action="/hafiz_proses" method="POST">
       @csrf
 
-      <h1>Garis Singgung Lingkaran</h1>
+      <h1>Persamaan Lingkaran titik pusat</h1>
       <div class="form-row">
       </div>
       <div class="form-group">
@@ -63,12 +63,6 @@
         <div class="form-group col-md-2">
           <input type="text" class="form-control" id="inputCity" name="b" placeholder="b">
         </div>
-        <div class="form-group col-md-0">
-          <h4> = </h4>
-        </div>
-        <div class="form-group col-md-2">
-          <input type="text" class="form-control" id="inputZip" name="r2" placeholder="r2" Required>
-        </div>
       </div>
       <div class="form-group">
         <div class="form-check">
@@ -76,14 +70,13 @@
       </div>
       <button type="submit" class="btn btn-primary">Proses</button>
     </form>
-
     <div class="pt-3">
       <div class="md-3">
       </div>
       <div class="md-3">
-        @if(session('info'))
+        @if(session('info_hafiz'))
         <div class="alert alert-info">
-          {{ session('info')}}
+          {{ session('info_hafiz')}}
         </div>
         @endif
       </div>

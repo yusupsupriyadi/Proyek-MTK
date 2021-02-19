@@ -46,7 +46,7 @@ class YusupController extends Controller
         // menentukan Garis singgung lingkaran dengan gradien m
         $hasil_4 = "y = mx - $x1 m + $y1";
         
-        return redirect('/yusup')->with('info','Hasil garis singgung melalui p(x1,y1) pada lingkaran x2 + xy = r2 adalah: ' .$hasil_1)->with('info2', 'Hasil melalui titik P(x1, y1) pada lingkaran (x-a)2 +(y-b)2 = r2  adalah: ' .$hasil_2)->with('info3', 'Hasil melalui titik P(x1, y1) di luar lingkaran adalah: ' .$hasil_3)->with('info4', 'Menentukan Garis singgung lingkaran dengan gradien m: ' . $hasil_4);
+        return redirect('/')->with('info','Hasil garis singgung melalui p(x1,y1) pada lingkaran x2 + xy = r2 adalah: ' .$hasil_1)->with('info2', 'Hasil melalui titik P(x1, y1) pada lingkaran (x-a)2 +(y-b)2 = r2  adalah: ' .$hasil_2)->with('info3', 'Hasil melalui titik P(x1, y1) di luar lingkaran adalah: ' .$hasil_3)->with('info4', 'Menentukan Garis singgung lingkaran dengan gradien m: ' . $hasil_4);
     }
     
 }

@@ -14,7 +14,6 @@ class HafizController extends Controller
     {
         $a = $request->input('a');
         $b = $request->input('b');
-        $r2 = $request->input('r2');
 
         // menentukan persamaan lingkaran dengan pusat 
         $hasil = " ($a * $a) + ($b * $b) = 0 ";
@@ -23,7 +22,7 @@ class HafizController extends Controller
         $total = $hasila * $hasilb;
 
 
-        return redirect('/hafiz')->with('info', 'Hasil adalah :' .$total);
+        return redirect('/')->with('info_hafiz', 'Hasil menentukan persamaan lingkaran dengan pusat  adalah :' .$total);
 
     }
 }
