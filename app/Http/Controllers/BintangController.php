@@ -24,7 +24,7 @@ class BintangController extends Controller
 
 
         // return redirect('/bintang')->with('info', 'Hasil  O (0,0) adalah :' .$hasil)->with('info2', 'Hasil menentukan titik pusat dan jari-jari adalah :' .$total_seluruh);
-        return redirect('/bintang')->with('info_bintang2', 'Hasil: ' . $total_seluruh);
+        return redirect('/bintang')->with('info_bintang2', 'Hasil: ' .$total_seluruh);
 
     }
 }
